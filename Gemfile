@@ -11,7 +11,8 @@ gem 'jquery-rails' # Use jquery as the JavaScript library
 gem 'turbolinks' # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'jbuilder', '~> 1.2' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem "paperclip", "~> 4.1"
-
+gem "paperclip-dropbox", ">= 1.1.7"
+gem "figaro"
  
 group :production do # gems for production environment
 	gem 'pg'
