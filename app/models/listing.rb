@@ -11,4 +11,6 @@ class Listing < ActiveRecord::Base
 	validates :name, :description, :price, presence: true # validates that the field is not blank
 	validates :price, numericality: { greater_than: 0} # validates that the price is number and bigger than 0
 	validates_attachment_presence :image
+
+	belongs_to :user
 end
