@@ -1,5 +1,6 @@
 <table class="table table-striped table-bordered">
   <tr>
+    <th class="center">Image</th>
     <th class="center">Name</th>
     <th class="center">Description</th>
     <th class="center">Price</th>
@@ -8,6 +9,7 @@
 
   <% @listings.each do |listing| %>
     <tr>
+      <td><%= image_tag listing.image.url(:thumb) %></td>
       <td><%= listing.name %></td>
       <td><%= listing.description %></td>
       <td><%= number_to_currency(listing.price) %></td>
