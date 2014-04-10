@@ -9,6 +9,8 @@ Etsydemo::Application.routes.draw do
   get "pages/about"
   get "pages/contact"
   get 'seller' => "listings#seller"
+  get 'sales' => "orders#sales"
+  get 'purchases' => "orders#purchases"
 
   root 'listings#index'
 
